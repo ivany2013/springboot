@@ -1,0 +1,51 @@
+.dctUtilMsg{
+    background-color: red;
+    border-radius:0 0 2px 2px;
+    border:1px solid black;
+    color: #3c763d;
+    display: none;
+    font-weight: bold;
+    position: fixed;
+    padding: 10px 15px;
+    z-index: 1300;
+    width: 100px;
+    color: black;
+}
+
+.xlWarningMsg {
+	top: 0px;
+	height: 50px;
+	width: 100%;
+	background-color: yellow;
+	position:fixed;
+	padding: 15px 15px;
+	color: red;
+	border-radius:10px;
+	display: none;
+}
+
+.xlprompt {
+	
+	position: fixed;
+	height: 50px;
+	width: 200px;
+	left:30%;
+	top:40%;
+	bottom:40%;
+	right:30%;
+	
+	background-color: black;
+	display: none;
+	padding:15px 15px;
+	color: white;
+	opacity:0.5;
+}
+.xltips2{
+	position: fixed;
+	height: 50px;
+	width: 200px;
+	padding:15px 15px;
+	background-color:red;
+	border-radius:10px;
+}
+

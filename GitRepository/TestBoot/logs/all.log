@@ -1,0 +1,221 @@
+2016-11-16 08:32:26,024  INFO Application:48 - Starting Application on mysteel-xl-PC with PID 3444 (D:\mysteel-xl\workspace\TestBoot\target\classes started by mysteel-xl in D:\mysteel-xl\workspace\TestBoot)
+2016-11-16 08:32:26,024  INFO Application:666 - No active profile set, falling back to default profiles: default
+2016-11-16 08:32:26,055  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-16 08:32:26,071  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b6cdb87: startup date [Wed Nov 16 08:32:26 CST 2016]; root of context hierarchy
+2016-11-16 08:32:27,600  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'spring.datasource.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 08:32:27,600  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 08:32:27,930  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 08:32:27,945  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration$$EnhancerBySpringCGLIB$$a0388d73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 08:32:27,961  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'dataSourceInitializer' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 08:32:27,961  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'myBatisConfig' of type [class com.mysteel.Config.MyBatisConfig$$EnhancerBySpringCGLIB$$71f84b56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 08:32:27,977  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'annotationDrivenTransactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 08:32:27,977  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45747c2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 08:32:28,320  INFO JettyEmbeddedServletContainerFactory:149 - Server initialized with port: 8080
+2016-11-16 08:32:28,320  INFO Server:327 - jetty-9.2.15.v20160210
+2016-11-16 08:32:28,413  INFO application:2052 - Initializing Spring embedded WebApplicationContext
+2016-11-16 08:32:28,413  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 2342 ms
+2016-11-16 08:32:28,819  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-16 08:32:28,819  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-16 08:32:28,819  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-16 08:32:28,819  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-16 08:32:28,819  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-16 08:32:28,977  INFO ContextHandler:744 - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@bc09aba{/,file:/C:/Users/mysteel-xl/AppData/Local/Temp/jetty-docbase.2343471401111491104.8080/,AVAILABLE}
+2016-11-16 08:32:28,977  INFO Server:379 - Started @3702ms
+2016-11-16 08:32:29,383  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b6cdb87: startup date [Wed Nov 16 08:32:26 CST 2016]; root of context hierarchy
+2016-11-16 08:32:29,430  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index]}" onto public java.lang.String com.mysteel.controller.UserController.index()
+2016-11-16 08:32:29,430  INFO RequestMappingHandlerMapping:534 - Mapped "{[/users],methods=[GET]}" onto public java.lang.String com.mysteel.controller.UserController.selectAllUser(java.util.Map<java.lang.String, java.lang.Object>,java.lang.Integer)
+2016-11-16 08:32:29,445  INFO RequestMappingHandlerMapping:534 - Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.mysteel.controller.UserController.deleteUser(java.lang.Integer)
+2016-11-16 08:32:29,445  INFO RequestMappingHandlerMapping:534 - Mapped "{[/load],methods=[GET],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.mysteel.controller.UserController.loadByUser(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2016-11-16 08:32:29,445  INFO RequestMappingHandlerMapping:534 - Mapped "{[/update],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.mysteel.controller.UserController.updateUser(java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer)
+2016-11-16 08:32:29,445  INFO RequestMappingHandlerMapping:534 - Mapped "{[/insert]}" onto public java.lang.String com.mysteel.controller.UserController.insertUser(java.lang.String,java.lang.String,java.lang.Integer)
+2016-11-16 08:32:29,445  INFO RequestMappingHandlerMapping:534 - Mapped "{[/login]}" onto public java.lang.String com.mysteel.controller.UserController.login(java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2016-11-16 08:32:29,445  INFO RequestMappingHandlerMapping:534 - Mapped "{[/loadByName]}" onto public java.lang.String com.mysteel.controller.UserController.loadByName(java.lang.String,java.lang.Integer)
+2016-11-16 08:32:29,445  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-16 08:32:29,445  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-16 08:32:29,477  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 08:32:29,477  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 08:32:29,523  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 08:32:29,757  INFO VelocityConfigurer:140 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-16 08:32:29,898  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2016-11-16 08:32:29,976  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2016-11-16 08:32:30,023  INFO application:2052 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-16 08:32:30,023  INFO DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-16 08:32:30,038  INFO DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-11-16 08:32:30,054  INFO ServerConnector:266 - Started ServerConnector@4359a5f2{HTTP/1.1}{0.0.0.0:8080}
+2016-11-16 08:32:30,054  INFO JettyEmbeddedServletContainer:121 - Jetty started on port(s) 8080 (http/1.1)
+2016-11-16 08:32:30,069  INFO Application:57 - Started Application in 4.513 seconds (JVM running for 4.794)
+2016-11-16 13:32:01,705  INFO Application:48 - Starting Application on mysteel-xl-PC with PID 6536 (D:\mysteel-xl\workspace\TestBoot\target\classes started by mysteel-xl in D:\mysteel-xl\workspace\TestBoot)
+2016-11-16 13:32:01,707  INFO Application:666 - No active profile set, falling back to default profiles: default
+2016-11-16 13:32:01,716  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-16 13:32:01,751  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e212ab1: startup date [Wed Nov 16 13:32:01 CST 2016]; root of context hierarchy
+2016-11-16 13:32:03,291  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'spring.datasource.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:03,292  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:03,672  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:03,678  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration$$EnhancerBySpringCGLIB$$a579c296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:03,706  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'dataSourceInitializer' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:03,708  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'myBatisConfig' of type [class com.mysteel.Config.MyBatisConfig$$EnhancerBySpringCGLIB$$77398079] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:03,731  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'annotationDrivenTransactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:03,732  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ab5b14f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:04,061  INFO JettyEmbeddedServletContainerFactory:149 - Server initialized with port: 8080
+2016-11-16 13:32:04,064  INFO Server:327 - jetty-9.2.15.v20160210
+2016-11-16 13:32:04,150  INFO application:2052 - Initializing Spring embedded WebApplicationContext
+2016-11-16 13:32:04,150  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 2400 ms
+2016-11-16 13:32:04,603  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-16 13:32:04,605  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-16 13:32:04,605  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-16 13:32:04,605  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-16 13:32:04,605  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-16 13:32:04,783  INFO ContextHandler:744 - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@69b95580{/,file:/C:/Users/mysteel-xl/AppData/Local/Temp/jetty-docbase.4002792038117256633.8080/,AVAILABLE}
+2016-11-16 13:32:04,784  INFO Server:379 - Started @3878ms
+2016-11-16 13:32:05,251  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e212ab1: startup date [Wed Nov 16 13:32:01 CST 2016]; root of context hierarchy
+2016-11-16 13:32:05,326  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index]}" onto public java.lang.String com.mysteel.controller.UserController.index()
+2016-11-16 13:32:05,327  INFO RequestMappingHandlerMapping:534 - Mapped "{[/users],methods=[GET]}" onto public java.lang.String com.mysteel.controller.UserController.selectAllUser(java.util.Map<java.lang.String, java.lang.Object>,java.lang.Integer)
+2016-11-16 13:32:05,327  INFO RequestMappingHandlerMapping:534 - Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.mysteel.controller.UserController.deleteUser(java.lang.Integer)
+2016-11-16 13:32:05,328  INFO RequestMappingHandlerMapping:534 - Mapped "{[/load],methods=[GET],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.mysteel.controller.UserController.loadByUser(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2016-11-16 13:32:05,328  INFO RequestMappingHandlerMapping:534 - Mapped "{[/update],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.mysteel.controller.UserController.updateUser(java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer)
+2016-11-16 13:32:05,328  INFO RequestMappingHandlerMapping:534 - Mapped "{[/insert]}" onto public java.lang.String com.mysteel.controller.UserController.insertUser(java.lang.String,java.lang.String,java.lang.Integer)
+2016-11-16 13:32:05,328  INFO RequestMappingHandlerMapping:534 - Mapped "{[/login]}" onto public java.lang.String com.mysteel.controller.UserController.login(java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2016-11-16 13:32:05,328  INFO RequestMappingHandlerMapping:534 - Mapped "{[/loadByName]}" onto public java.lang.String com.mysteel.controller.UserController.loadByName(java.lang.String,java.lang.Integer)
+2016-11-16 13:32:05,332  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-16 13:32:05,333  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-16 13:32:05,362  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 13:32:05,363  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 13:32:05,402  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 13:32:05,617  INFO VelocityConfigurer:140 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-16 13:32:05,744  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2016-11-16 13:32:05,832  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2016-11-16 13:32:05,852  INFO application:2052 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-16 13:32:05,852  INFO DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-16 13:32:05,864  INFO DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2016-11-16 13:32:05,878  INFO ServerConnector:266 - Started ServerConnector@eb33ec6{HTTP/1.1}{0.0.0.0:8080}
+2016-11-16 13:32:05,881  INFO JettyEmbeddedServletContainer:121 - Jetty started on port(s) 8080 (http/1.1)
+2016-11-16 13:32:05,885  INFO Application:57 - Started Application in 4.698 seconds (JVM running for 4.98)
+2016-11-16 13:32:37,235  INFO AnnotationConfigEmbeddedWebApplicationContext:960 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e212ab1: startup date [Wed Nov 16 13:32:01 CST 2016]; root of context hierarchy
+2016-11-16 13:32:37,240  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2016-11-16 13:32:37,252  INFO ServerConnector:306 - Stopped ServerConnector@eb33ec6{HTTP/1.1}{0.0.0.0:8080}
+2016-11-16 13:32:37,252  INFO application:2052 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2016-11-16 13:32:37,261  WARN HashedSession:136 - Problem saving session 1911563lp5xpyecx15hzs90mj
+java.io.NotSerializableException: com.mysteel.entity.User
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at org.eclipse.jetty.server.session.HashedSession.save(HashedSession.java:195)
+	at org.eclipse.jetty.server.session.HashedSession.save(HashedSession.java:158)
+	at org.eclipse.jetty.server.session.HashedSession.save(HashedSession.java:128)
+	at org.eclipse.jetty.server.session.HashSessionManager.shutdownSessions(HashSessionManager.java:440)
+	at org.eclipse.jetty.server.session.AbstractSessionManager.doStop(AbstractSessionManager.java:304)
+	at org.eclipse.jetty.server.session.HashSessionManager.doStop(HashSessionManager.java:192)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:162)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.session.SessionHandler.doStop(SessionHandler.java:127)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:162)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:835)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:215)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:529)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:162)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:456)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainer.stop(JettyEmbeddedServletContainer.java:181)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:302)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onClose(EmbeddedWebApplicationContext.java:151)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:988)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:901)
+2016-11-16 13:32:37,263  INFO ContextHandler:865 - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@69b95580{/,file:/C:/Users/mysteel-xl/AppData/Local/Temp/jetty-docbase.4002792038117256633.8080/,UNAVAILABLE}
+2016-11-16 13:32:37,544  INFO Application:48 - Starting Application on mysteel-xl-PC with PID 6536 (D:\mysteel-xl\workspace\TestBoot\target\classes started by mysteel-xl in D:\mysteel-xl\workspace\TestBoot)
+2016-11-16 13:32:37,545  INFO Application:666 - No active profile set, falling back to default profiles: default
+2016-11-16 13:32:37,547  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f643587: startup date [Wed Nov 16 13:32:37 CST 2016]; root of context hierarchy
+2016-11-16 13:32:38,271  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'spring.datasource.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:38,271  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:38,469  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:38,471  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration$$EnhancerBySpringCGLIB$$a579c296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:38,475  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'dataSourceInitializer' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:38,476  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'myBatisConfig' of type [class com.mysteel.Config.MyBatisConfig$$EnhancerBySpringCGLIB$$77398079] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:38,482  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'annotationDrivenTransactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:38,483  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ab5b14f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 13:32:38,519  INFO JettyEmbeddedServletContainerFactory:149 - Server initialized with port: 8080
+2016-11-16 13:32:38,519  INFO Server:327 - jetty-9.2.15.v20160210
+2016-11-16 13:32:38,523  INFO application:2052 - Initializing Spring embedded WebApplicationContext
+2016-11-16 13:32:38,523  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 976 ms
+2016-11-16 13:32:38,684  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-16 13:32:38,685  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-16 13:32:38,685  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-16 13:32:38,685  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-16 13:32:38,686  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-16 13:32:38,695  INFO ContextHandler:744 - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@71088b09{/,file:/C:/Users/mysteel-xl/AppData/Local/Temp/jetty-docbase.13658983243623014.8080/,AVAILABLE}
+2016-11-16 13:32:38,695  INFO Server:379 - Started @37790ms
+2016-11-16 13:32:38,776  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f643587: startup date [Wed Nov 16 13:32:37 CST 2016]; root of context hierarchy
+2016-11-16 13:32:38,785  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index]}" onto public java.lang.String com.mysteel.controller.UserController.index()
+2016-11-16 13:32:38,786  INFO RequestMappingHandlerMapping:534 - Mapped "{[/users],methods=[GET]}" onto public java.lang.String com.mysteel.controller.UserController.selectAllUser(java.util.Map<java.lang.String, java.lang.Object>,java.lang.Integer)
+2016-11-16 13:32:38,786  INFO RequestMappingHandlerMapping:534 - Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.mysteel.controller.UserController.deleteUser(java.lang.Integer)
+2016-11-16 13:32:38,786  INFO RequestMappingHandlerMapping:534 - Mapped "{[/load],methods=[GET],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.mysteel.controller.UserController.loadByUser(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2016-11-16 13:32:38,786  INFO RequestMappingHandlerMapping:534 - Mapped "{[/update],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.mysteel.controller.UserController.updateUser(java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer)
+2016-11-16 13:32:38,787  INFO RequestMappingHandlerMapping:534 - Mapped "{[/insert]}" onto public java.lang.String com.mysteel.controller.UserController.insertUser(java.lang.String,java.lang.String,java.lang.Integer)
+2016-11-16 13:32:38,787  INFO RequestMappingHandlerMapping:534 - Mapped "{[/login]}" onto public java.lang.String com.mysteel.controller.UserController.login(java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2016-11-16 13:32:38,787  INFO RequestMappingHandlerMapping:534 - Mapped "{[/loadByName]}" onto public java.lang.String com.mysteel.controller.UserController.loadByName(java.lang.String,java.lang.Integer)
+2016-11-16 13:32:38,791  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-16 13:32:38,792  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-16 13:32:38,809  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 13:32:38,809  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 13:32:38,830  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 13:32:38,899  INFO VelocityConfigurer:140 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-16 13:32:38,929  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2016-11-16 13:32:38,977  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2016-11-16 13:32:38,982  INFO application:2052 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-16 13:32:38,983  INFO DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-16 13:32:38,985  INFO DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2016-11-16 13:32:38,986  INFO ServerConnector:266 - Started ServerConnector@2e8e14bb{HTTP/1.1}{0.0.0.0:8080}
+2016-11-16 13:32:38,987  INFO JettyEmbeddedServletContainer:121 - Jetty started on port(s) 8080 (http/1.1)
+2016-11-16 13:32:38,988  INFO Application:57 - Started Application in 1.539 seconds (JVM running for 38.083)
+2016-11-16 14:53:43,749  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2016-11-16 14:53:43,770  INFO Application:48 - Starting Application on mysteel-xl-PC with PID 6608 (D:\mysteel-xl\workspace\TestBoot\target\classes started by mysteel-xl in D:\mysteel-xl\workspace\TestBoot)
+2016-11-16 14:53:43,771  INFO Application:666 - No active profile set, falling back to default profiles: default
+2016-11-16 14:53:43,805  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@732d7628: startup date [Wed Nov 16 14:53:43 CST 2016]; root of context hierarchy
+2016-11-16 14:53:45,362  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'spring.datasource.CONFIGURATION_PROPERTIES' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 14:53:45,364  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$NonEmbeddedConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 14:53:45,735  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'dataSource' of type [class org.apache.tomcat.jdbc.pool.DataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 14:53:45,740  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration$$EnhancerBySpringCGLIB$$62d847f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 14:53:45,758  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'dataSourceInitializer' of type [class org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 14:53:45,759  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'myBatisConfig' of type [class com.mysteel.Config.MyBatisConfig$$EnhancerBySpringCGLIB$$349805d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 14:53:45,779  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'annotationDrivenTransactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 14:53:45,780  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81436ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-16 14:53:46,122  INFO JettyEmbeddedServletContainerFactory:149 - Server initialized with port: 8080
+2016-11-16 14:53:46,125  INFO Server:327 - jetty-9.2.15.v20160210
+2016-11-16 14:53:46,209  INFO application:2052 - Initializing Spring embedded WebApplicationContext
+2016-11-16 14:53:46,210  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 2406 ms
+2016-11-16 14:53:46,614  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-16 14:53:46,616  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-16 14:53:46,617  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-16 14:53:46,617  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-16 14:53:46,617  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-16 14:53:46,808  INFO ContextHandler:744 - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@3000644e{/,file:/C:/Users/mysteel-xl/AppData/Local/Temp/jetty-docbase.3365156784801527829.8080/,AVAILABLE}
+2016-11-16 14:53:46,809  INFO Server:379 - Started @3885ms
+2016-11-16 14:53:47,209  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@732d7628: startup date [Wed Nov 16 14:53:43 CST 2016]; root of context hierarchy
+2016-11-16 14:53:47,265  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index]}" onto public java.lang.String com.mysteel.controller.UserController.index()
+2016-11-16 14:53:47,266  INFO RequestMappingHandlerMapping:534 - Mapped "{[/users],methods=[GET]}" onto public java.lang.String com.mysteel.controller.UserController.selectAllUser(java.util.Map<java.lang.String, java.lang.Object>,java.lang.Integer)
+2016-11-16 14:53:47,266  INFO RequestMappingHandlerMapping:534 - Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.mysteel.controller.UserController.deleteUser(java.lang.Integer)
+2016-11-16 14:53:47,267  INFO RequestMappingHandlerMapping:534 - Mapped "{[/load],methods=[GET],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.mysteel.controller.UserController.loadByUser(java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2016-11-16 14:53:47,267  INFO RequestMappingHandlerMapping:534 - Mapped "{[/update],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.mysteel.controller.UserController.updateUser(java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer)
+2016-11-16 14:53:47,267  INFO RequestMappingHandlerMapping:534 - Mapped "{[/insert]}" onto public java.lang.String com.mysteel.controller.UserController.insertUser(java.lang.String,java.lang.String,java.lang.Integer)
+2016-11-16 14:53:47,267  INFO RequestMappingHandlerMapping:534 - Mapped "{[/login]}" onto public java.lang.String com.mysteel.controller.UserController.login(java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+2016-11-16 14:53:47,267  INFO RequestMappingHandlerMapping:534 - Mapped "{[/loadByName]}" onto public java.lang.String com.mysteel.controller.UserController.loadByName(java.lang.String,java.lang.Integer)
+2016-11-16 14:53:47,271  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-16 14:53:47,271  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-16 14:53:47,301  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 14:53:47,301  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 14:53:47,339  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-16 14:53:47,573  INFO VelocityConfigurer:140 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2016-11-16 14:53:47,696  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2016-11-16 14:53:47,785  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2016-11-16 14:53:47,806  INFO application:2052 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-16 14:53:47,806  INFO DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-16 14:53:47,818  INFO DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2016-11-16 14:53:47,835  INFO ServerConnector:266 - Started ServerConnector@2423cb2a{HTTP/1.1}{0.0.0.0:8080}
+2016-11-16 14:53:47,838  INFO JettyEmbeddedServletContainer:121 - Jetty started on port(s) 8080 (http/1.1)
+2016-11-16 14:53:47,842  INFO Application:57 - Started Application in 4.642 seconds (JVM running for 4.919)

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "C:\Users\mysteel-xl\Downloads/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mysteel.mapper.UserDao">
+   <select id="selectAll"  resultType="com.mysteel.entity.User">
+      select id,name,sex,age from user_
+  </select>
+  
+  <delete id="deleteUser" parameterType="Integer">
+  delete from user_ where id=#{id}
+  </delete>
+  
+  <insert id="insertUser" parameterType="com.mysteel.entity.User" >
+  insert into user_ (name, sex, age) value(#{name}, #{sex},#{age})
+  </insert>
+  
+  <select id="loadById" parameterType="Integer" resultType="com.mysteel.entity.User">
+  select * from user_ where id = #{id}
+  </select>
+  
+  <update id="updateUser" parameterType="com.mysteel.entity.User" >
+  update user_ set name=#{name},sex=#{sex},age=#{age} where id=#{id}
+  </update>
+  
+  <select id="login"   resultType="com.mysteel.entity.User">
+  select id,name,sex,age from user_ where name=#{0} and age=#{1}
+  </select>
+  
+  <select id="loadByName" parameterType="String" resultType="com.mysteel.entity.User" >
+  select * from user_ where name=#{name}
+  </select>
+  
+</mapper>

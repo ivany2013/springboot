@@ -1,0 +1,78 @@
+<html> 
+
+<head>
+    <title>登录</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+     <script src="/js/jquery.min.js"></script>
+	  <script src="/js/index.js"></script>
+	  <link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/css/xlTipsUtil.css">
+	<link rel="stylesheet" href="/css/login.css">
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+ 	<script src="/js/layer.js"></script>
+ 	<script src="/js/xlTipsUtil.js"></script>
+ </head>
+<body> 
+			
+			<div class="form-group" id="login">
+				<h2>Mysteel  Login</h2>
+  					
+				<div class="form-group" id="fname">
+				<input type="text" class="form-control" name="name" id="name" placeholder="用户名..."/>
+				<label class="control-label" for="inputSuccess1" id="jname2">输入有误</label>
+				</div>
+				
+				<div class="form-group" id="fpwd">
+				<input type="password" class="form-control" name="age" id="pwd" placeholder="密码..."/>
+				<label class="control-label" for="inputSuccess1" id="jpwd4">输入有误</label>
+				</div>
+				
+				
+				
+				<button type="submit" class="btn btn-default" disabled="disabled" id="sub">登录</button> 
+				<button type="submit" class="btn btn-default" id="reg">注册</button>
+				
+				
+					<button type="submit" class="btn btn-default" id="test">test</button>
+					
+					<button type="submit" class="btn btn-default" id="prompt">提示</button>
+					
+			</div>
+		
+	
+	
+		<div class="form-group"  id="register">
+				<h2>Mysteel Register</h2>
+  					
+				<div class="form-group" id="frname">
+				<input type="text" class="form-control" id="rname" placeholder="用户名..."/>
+				<label class="control-label" for="inputSuccess1" id="jrname2">输入有误</label>
+				</div>
+				
+				<div class="form-group" id="frpwd1">
+				<input type="password" class="form-control" id="rpwd1" placeholder="密码..."/>
+				<label class="control-label" for="inputSuccess1" id="jrpwd3">输入有误</label>
+				</div>
+				
+				<div class="form-group" id="frpwd2">
+				<input type="password" class="form-control" id="rpwd2" placeholder="再次输入密码..."/>
+				<label class="control-label" for="inputSuccess1" id="jrpwd4"></label>
+				</div>
+				
+				
+				
+				<button type="submit" class="btn btn-default" id="back">返回</button> 
+				<button type="submit" class="btn btn-default" id="reg2">注册</button>
+				
+				
+		</div>
+		
+	
+	<script>
+	
+	</script>
+	
+</body>  
+</html>

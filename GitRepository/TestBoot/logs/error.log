@@ -1,0 +1,2 @@
+2016-11-15 08:51:10,462 ERROR velocity:96 - ResourceManager : unable to find resource 'login.gif.vm' in any resource loader.
+2016-11-15 08:51:43,863 ERROR velocity:96 - ResourceManager : unable to find resource 'login.gif.vm' in any resource loader.
