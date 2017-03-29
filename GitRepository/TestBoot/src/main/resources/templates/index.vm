@@ -3,13 +3,16 @@
     <title>首页</title>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
      <script src="/js/jquery.min.js"></script>
-	  <script src="/js/index.js"></script>
+	 
 	  <link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="/css/login.css">
+	<link rel="stylesheet" href="/css/xlTipsUtil.css">
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
  	<script src="/js/layer.js"></script>
+ 	 <script src="/js/index.js"></script>
+ 	  <script src="/js/xlTipsUtil.js"></script>
  </head>
 
 
@@ -27,7 +30,7 @@
 	<td>$user.name</td>
 	<td>$user.sex</td>
 	<td>$user.age</td>
-	<td><a href="delete?id=$user.id">删除</a></td>
+	<td><a href="javascript:deleteTee('delete',$user.id)">删除</a></td>
 	</tr>
 	
 	#end 

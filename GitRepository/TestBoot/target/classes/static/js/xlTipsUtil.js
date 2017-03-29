@@ -58,7 +58,26 @@ var xltips2 = function(tagi,msg){
 	
 	msgObj.fadeIn(1000);
 	setTimeout(function(){msgObj.fadeOut(1000)},1000); 
+}
+
+
+var deletePro = function(url,id){
+	var delObj = $(".deletePro");
+	if(delObj.length==0){
+		$(document.body).append("<div class='deletePro'><h4>是否确认删除？</h4><input type='button' value='确认' class='btn-y'  /> <input type='button' value='取消' class='btn-n'  /></div>");
+	}else{
+		delObj.show();
+	}
 	
+	$(".btn-n").click(function(){
+		$(".deletePro").hide();
+		return false;
+	});
+	
+	$(".btn-y").click(function(){
+		$(".deletePro").hide();
+		location.href=url+"?id="+id;
+	});
 }
 
 
@@ -66,7 +85,8 @@ var xltips2 = function(tagi,msg){
 $.extend({
 	xlwarning:xlwarning,
 	xlprompt:xlprompt,
-	xltips2:xltips2
+	xltips2:xltips2,
+	deletePro:deletePro
 });
 
 $.fn.extend({

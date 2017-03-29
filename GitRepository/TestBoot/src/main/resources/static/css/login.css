@@ -43,3 +43,7 @@ body {
 #frpwd1,#frpwd2 {
 	height: 50px;
 }
+
+a:link {
+ text-decoration: none;
+}

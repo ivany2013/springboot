@@ -47,5 +47,32 @@
 	padding:15px 15px;
 	background-color:red;
 	border-radius:10px;
+	display: none;
 }
+
+.deletePro{
+	position: fixed;
+	height: 90px;
+	width: 200px;
+	background-color:white;
+	top: 40%;
+	left: 42%;
+	border-style: solid;
+	border-color: black;
+	padding-top: 5px;
+}
+
+.btn-n{
+	background-color: #FF0000;
+	border-color: #FF2D2D;
+	border-radius:5px;
+}
+
+.btn-y{
+	background-color: #00BB00;
+	border-color: #00DB00;
+	border-radius:5px;
+}
+
+
 

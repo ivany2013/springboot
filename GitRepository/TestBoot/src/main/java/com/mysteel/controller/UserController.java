@@ -34,9 +34,9 @@ public class UserController {
 		
 		int pages = (userService.selectAll().size())%4==0 ? (userService.selectAll().size())/4 :(userService.selectAll().size())/4 +1 ;
 		
-		PageHelper.startPage(pageNum, 4);
-		list = userService.selectAll();
 		
+		PageHelper.startPage(2, 4);
+		list = userService.selectAll();
 		
 		
 		map.put("list", list);

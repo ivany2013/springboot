@@ -1,6 +1,6 @@
 $(function(){
 	
-	
+	var a=null;
 	 $("#jname2").hide();
 	 $("#jpwd3").hide();
 	 $("#jpwd4").hide();
@@ -205,8 +205,11 @@ $(function(){
 	 $.xlwarning("温馨提示，进入Mysteel");
 	 
 	 
+	
 	 
 });
-
+function deleteTee(url,id){
+  $.deletePro(url,id);
+ }
 
 
