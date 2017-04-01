@@ -1,0 +1,11 @@
+jedis :  
+  pool :  
+    host : 192.168.100.61  
+    port : 6379  
+    config :  
+      maxTotal: 100  
+      maxIdle: 10  
+      maxWaitMillis : 100000  
+  
+server :  
+  port : 7006  
