@@ -23,7 +23,7 @@
   </update>
   
   <select id="login"   resultType="com.mysteel.entity.User">
-  select id,name,sex,age from user_ where name=#{0} and age=#{1}
+  select id,name,sex,age from user_ where name=#{0} and password=#{1}
   </select>
   
   <select id="loadByName" parameterType="String" resultType="com.mysteel.entity.User" >

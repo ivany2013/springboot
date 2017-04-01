@@ -90,9 +90,9 @@ public class UserController {
 	
 	@RequestMapping("/login")
 	@ResponseBody
-	public String login(String name ,Integer age,HttpServletRequest request){
-		System.out.println(name+"===="+age);
-		User user = userService.login(name, age);
+	public String login(String name ,String password,HttpServletRequest request){
+		System.out.println(name+"===="+password);
+		User user = userService.login(name, password);
 		ObjectMapper mapper = new ObjectMapper();
 		Map<String, String> map = new HashMap<String, String>();
 		String result = null;
