@@ -3,20 +3,31 @@ package com.mysteel.entity;
 public class User {
 	private Integer id;
 	private String name;
+	private String password;
 	private String sex;
 	private Integer age;
 	
 	
 	
-	public User(String name, String sex, Integer age) {
+	public User(String name, String sex, Integer age,String password) {
 		this.name = name;
 		this.sex = sex;
 		this.age = age;
+		this.password = password;
 	}
 
 	public User() {
 	}
 	
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public User(Integer id, String name, String sex, Integer age) {
 		this.id = id;
 		this.name = name;

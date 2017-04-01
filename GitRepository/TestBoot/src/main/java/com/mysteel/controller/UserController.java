@@ -71,9 +71,9 @@ public class UserController {
 	
 	@RequestMapping("/insert")
 	@ResponseBody
-	public String insertUser(String name,String sex,Integer age){
+	public String insertUser(String name,String sex,Integer age,String password){
 		
-		User user = new User(name, sex, age);
+		User user = new User(name, sex, age,password);
 		Map<String, String> map = new HashMap<String, String>();
 		System.out.println(user.getName());
 		userService.insertUser(user);
@@ -117,15 +117,17 @@ public class UserController {
 	
 	@RequestMapping("/loadByName")
 	@ResponseBody
-	public String loadByName(String name,Integer age){
+	public String loadByName(String name,String password){
 		User user = userService.loadByName(name);
 		ObjectMapper mapper = new ObjectMapper();
 		Map<String, String> map = new HashMap<String, String>();
 		String result = null;
 		try {
 			if(user==null){
-				String sex = "额";
-				user = new User(name, sex, age);
+				String sex = "F";
+				Integer age = 18;
+				//这里的password为空，注册时没有传过来，你看看
+				user = new User(name, sex, age,password);
 				userService.insertUser(user);
 				map.put("msg", "注册成功");
 				map.put("success", "true");

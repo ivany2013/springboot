@@ -11,7 +11,7 @@
   </delete>
   
   <insert id="insertUser" parameterType="com.mysteel.entity.User" >
-  insert into user_ (name, sex, age) value(#{name}, #{sex},#{age})
+  insert into user_ (name, sex, age,password) value(#{name}, #{sex},#{age},#{password})
   </insert>
   
   <select id="loadById" parameterType="Integer" resultType="com.mysteel.entity.User">
