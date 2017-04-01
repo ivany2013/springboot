@@ -36,8 +36,8 @@ public class UserService {
 		dao.updateUser(user);
 	}
 	
-	public User login(String name,Integer age){
-		return dao.login(name, age);
+	public User login(String name,String password){
+		return dao.login(name, password);
 	}
 	
 	public User loadByName(String name){

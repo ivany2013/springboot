@@ -18,7 +18,7 @@ public interface UserDao {
 	
 	void updateUser(User user);
 	
-	User login(String name,Integer age);
+	User login(String name,String password);
 	
 	User loadByName(String name);
 }

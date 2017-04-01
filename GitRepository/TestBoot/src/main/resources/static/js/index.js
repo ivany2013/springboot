@@ -136,7 +136,7 @@ $(function(){
 			   url: "login",
 			   data: {
 				   "name":name,
-				   "age":pwd
+				   "password":pwd
 			   },
 			   success: function(msg){
 				   var obj = jQuery.parseJSON(msg);
@@ -176,7 +176,7 @@ $(function(){
 			   url: "loadByName",
 			   data: {
 				   "name":name,
-				   "age":pwd
+				   "password":pwd
 			   },
 			   success: function(msg){
 				   var obj = jQuery.parseJSON(msg);
