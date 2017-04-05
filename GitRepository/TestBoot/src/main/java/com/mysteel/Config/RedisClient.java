@@ -1,5 +1,11 @@
 package com.mysteel.Config;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.Externalizable;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
@@ -7,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.alibaba.fastjson.JSON;
+import com.fasterxml.jackson.databind.ser.impl.WritableObjectId;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -64,7 +71,7 @@ public class RedisClient {
 		Jedis jedis = null;
 		try {
 			jedis = jedisPool.getResource();
-			return jedis.hmget(key);
+			return jedis.hmget(key);//这里是不是有问题啊
 		}finally{
 			jedis.close();
 		}
@@ -113,4 +120,50 @@ public class RedisClient {
 	 * 
 	 * */
 	//TODO
+	public void setObjSel(String key,Object obj){
+		Jedis jedis = null;
+		try{
+			jedis = jedisPool.getResource();
+			if(obj instanceof Serializable){
+				ByteArrayOutputStream bos = new ByteArrayOutputStream();
+				ObjectOutputStream os = new ObjectOutputStream(bos);
+				os.writeObject(obj);
+				os.flush();
+				os.close();
+				
+				byte[] bArray = bos.toByteArray();
+				jedis.set(key.getBytes(), bArray);
+				
+			}else{
+				System.out.println("该对象没有序列化");
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			jedis.close();
+		}
+		
+	}
+	
+	public Object getObjSel(String key){
+		Jedis jedis = null;
+		Object obj = null;
+		try{
+			jedis = jedisPool.getResource();
+			
+			byte[] bytes = jedis.get(key.getBytes());
+			
+			ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
+			ObjectInputStream ois = new ObjectInputStream(bis);
+			obj = ois.readObject();
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			jedis.close();
+		}
+		
+		return obj;
+	}
+	
 }
