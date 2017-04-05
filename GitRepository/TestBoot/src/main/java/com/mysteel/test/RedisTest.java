@@ -22,12 +22,26 @@ public class RedisTest {
 //	@Test
 	public void testSet(){
 		User user = new User("111", "22", 3, "444");
-		client.setObj("user", user);
+//		client.setObj("user", user);
+		try {
+			
+			client.setObjSel("seluser", user);
+//			client.set("test", "1234");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	@Test
 	public void testGet(){
-		User user = (User) client.getObj("user",User.class);
+		User user = (User) client.getObjSel("seluser");
+		try {
+			System.out.println(user);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println(user.getName());
 	}
 }
